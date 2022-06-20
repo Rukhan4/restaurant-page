@@ -21,8 +21,14 @@ html {
     line-height: 1.6;
 }
 
-header {
-    font-size: 2.4rem;
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
 }
 
 h1,
@@ -83,14 +89,21 @@ button {
     flex-direction: row;
 }
 
-.button-nav {
+nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.button-nav {
+    color: #eee;
     gap: 30px;
+    box-sizing: content-box;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 2rem;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
     border-bottom: 2px solid transparent;
     transition: transform 0.3s;
 }
@@ -103,18 +116,33 @@ button {
     transform: translateY(-10%);
 }
 
-/* Main */
+.main {
+    width: 100%;
+    max-width: 900px;
+    padding: 4rem;
+    margin: 6rem 0;
+    font-size: 2rem;
+    background-color: rgba(255, 238, 238, 0.5);
+    border: 1px solid black;
+}
+
+/* Home */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 525px;
+    width: 618px;
+    animation: fadeIn 1.5s;
+}
 
 h2 {
     font-size: 50px;
 }
 
-.main {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #eee;
-    text-align: center;
-    margin-top: 100px;
-}
+
 
 p {
     word-wrap: break-word;
@@ -127,7 +155,7 @@ p {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.6);
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: 50px;
