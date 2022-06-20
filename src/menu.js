@@ -53,7 +53,7 @@ function createMenuItem(name, description) {
     foodDescription.textContent = description;
 
     const foodImage = document.createElement("img");
-    foodImage.src = "./images/food.png";
+    foodImage.src = "images/food.PNG";
 
     menuItem.appendChild(menuItemName);
     menuItem.appendChild(foodDescription);
@@ -63,9 +63,9 @@ function createMenuItem(name, description) {
 }
 
 function loadMenu() {
-    const content = document.getElementById("content");
-    content.textContent = "";
-    content.appendChild(createMenu());
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createMenu());
 };
 
 export default loadMenu;
