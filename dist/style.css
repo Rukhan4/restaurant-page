@@ -120,3 +120,28 @@ p {
     word-wrap: break-word;
     max-width: 700px;
 }
+
+/* Contact */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+    color: white;
+}
+
+.contact p {
+    width: 100%;
+    padding: 1rem;
+}
+
+.contact img {
+    max-height: 420px;
+    padding: 1rem;
+    opacity: 90%;
+}
