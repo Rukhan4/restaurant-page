@@ -1,6 +1,6 @@
 function createHome() {
     const home = document.createElement("div");
-    home.classList.add("home");
+    home.classList.add("main");
 
     home.appendChild(createAboutUs("About us"));
     home.appendChild(createParagraph(`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur tincidunt nisl. Praesent quis
