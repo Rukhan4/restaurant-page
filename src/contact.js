@@ -19,4 +19,10 @@ function createContact() {
     return contact;
 };
 
-export default createContact;
+function loadContact() {
+    const content = document.getElementById("content");
+    content.textContent = "";
+    content.appendChild(createContact());
+};
+
+export default loadContact;
