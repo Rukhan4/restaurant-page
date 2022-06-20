@@ -3,4 +3,8 @@ body {
     font-family: 'Anek Latin', sans-serif;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 50px;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
