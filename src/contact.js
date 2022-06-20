@@ -9,7 +9,7 @@ function createContact() {
     address.textContent = "Address: In your dreams";
 
     const map = document.createElement("img");
-    map.src = "./images/map.png";
+    map.src = "./images/map.PNG";
     map.alt = "map";
 
     contact.appendChild(phone);
@@ -20,9 +20,9 @@ function createContact() {
 };
 
 function loadContact() {
-    const content = document.getElementById("content");
-    content.textContent = "";
-    content.appendChild(createContact());
+    const main = document.getElementById('main')
+    main.textContent = ''
+    main.appendChild(createContact())
 };
 
 export default loadContact;
